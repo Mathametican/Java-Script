@@ -298,6 +298,12 @@
 //FOR LOOP
 
 for(let i=0; i<=10; i++){
+    if(i==2){
+        console.log('İki = '+i); 
+        //Burada iki tane 2 oldu.
+        //Bu sorunu continue ile aşacagız. 
+        //Atlayıp geçiyor.
+    }
     console.log(i);
 }
 

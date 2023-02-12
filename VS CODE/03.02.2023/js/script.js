@@ -278,10 +278,21 @@
 
 //1- While Loop
 
+// let i=0;
+// while(i<=10){
+//     console.log(i);
+//     i++;
+// }
+
+//2- Do- While Loop
+
 let i=0;
+do{
+  console.log(i);
+  i++;
+}
 while(i<=10){
-    console.log(i);
-    i++;
+     console.log('Do-While Loop is completed');
 }
 
 

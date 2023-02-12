@@ -329,9 +329,9 @@
 
 //TEMPLATE LITERALS
 
- const fullName='Kübra Sert';
- const city='Ankara';
-const dateOfBirth='1996';
+//  const fullName='Kübra Sert';
+//  const city='Ankara';
+// const dateOfBirth='1996';
 
 // let val=`Benim adım ${fullName}.
 // ${city}'de yaşıyorum.
@@ -344,10 +344,48 @@ const dateOfBirth='1996';
 
 //IF gibi kullanabiliyoruz. Tüm bu işlemleri Süslü parantez içerisinde yapacağız.
 
+//OBJECT LITERALS
+//let val;
+// let person={
+//     fullName: 'Mustafa',
+//     lastName: 'Filiz',
+//     age: 27,
+//     hobbies: ['puzzle','Math','Reading Books'],
+//     //Burada Object içinde object oluşturuyoruz.
+//     address :{
+//         city:'Ankara',
+//         country: 'Türkiye'
+//     },
+//     dogumtarihi :function(){
+//         return 2023 - this.age;
+//     }
+// }
+//val=person;
+//val=person.fullName;
+//val=person.lastName;
+//val=person.age;
+//val=person.hobbies;
+//val=person.hobbies[1];
+//val=person.address;
+//val=person.address.city;
+//val=person.address.country;
+//val=person.dogumtarihi();
 
 
-
-
+// let people= [{
+//     firstName:'Kübra',
+//     lastName:'SERT',
+//     age:36
+// },
+// {
+//     firstName:'Aslı',
+//     lastName:'Yıldız',
+//     age:8
+// }]
+// val=people[1].firstName;
+// console.log(val);
+// console.log(people);
+// console.log(typeof people);
 
 
 

@@ -297,19 +297,52 @@
 
 //FOR LOOP
 
-for(let i=0; i<=10; i++){
-    if(i==2){
-        console.log('İki = '+i); 
-        //Burada iki tane 2 oldu.
-        //Bu sorunu continue ile aşacagız. 
-        //Atlayıp geçiyor.
-    }
-    console.log(i);
-}
+// for(let i=0; i<=10; i++){
+//     if(i==2){
+//         console.log('İki = '+i); 
+//         //Burada iki tane 2 oldu.
+//         //Bu sorunu continue ile aşacagız. 
+//         //Atlayıp geçiyor.
+//     }
+//     console.log(i);
+// }
 
+// for(let i=0; i<=10; i++){
+//     if(i==2){
+//         console.log('İki = '+i); 
+//         continue;
+//     }
+//     if(i==5){
+//         console.log('Beş = '+i);
+//         break;
+//     }
+//     console.log(i);
+// }
 
+// iç içe for döngüleri
 
+// for(let i=10; i>0; i--){
+// for(let j=5; j>=0; j--){
+//     console.log(i*j);
+// }
+// }
 
+//TEMPLATE LITERALS
+
+ const fullName='Kübra Sert';
+ const city='Ankara';
+const dateOfBirth='1996';
+
+// let val=`Benim adım ${fullName}.
+// ${city}'de yaşıyorum.
+// ${2023-dateOfBirth} yaşındayım.`;
+
+// let val=`${(2023- dateOfBirth)>35 ? ' Bu işe başvurmak için gerekli yaş şartını taşımıyorsunuz.' : 
+// 'Bu işe başvurmak için gerekli şartları taşımaktasınız.'}`;
+
+//  console.log(val);
+
+//IF gibi kullanabiliyoruz. Tüm bu işlemleri Süslü parantez içerisinde yapacağız.
 
 
 

@@ -428,15 +428,57 @@
 // let a=karesiniAl(13);
 // console.log(a);
 
-function karelerToplam(sayi1,sayi2){
-    function kareAl(x){
-        return x*x;
-    }
-    return kareAl(sayi1)+kareAl(sayi2);
-}
-let a=karelerToplam(12,5);
-console.log(a);
+// function karelerToplam(sayi1,sayi2){
+//     function kareAl(x){
+//         return x*x;
+//     }
+//     return kareAl(sayi1)+kareAl(sayi2);
+// }
+// let a=karelerToplam(12,5);
+// console.log(a);
 
+//FUNCTION DECLARATION VS EXPRESSION
+
+//1-FUNCTION DECLARATION
+
+// function sum(a,b){
+//     var c=a+b;
+//     return c;
+// }
+// let x=sum(45,89);
+// console.log(x);
+
+//2-FUNCTION EXPRESSION
+//Son zamanlarda bu daha yaygın olarak kullanılıyor.
+// const sum=function(a,b){
+//     var c= a+b;
+//     return c;
+// }
+// console.log(sum(30,75));
+
+//Eger a ve b tanımsızsa veya yazılmazsa hata vermemesi için
+
+// const sum=function(a,b){
+//     if(a===undefined){
+//         a=0;
+//     }
+//     if(b=== undefined){
+//         b=0;
+//     }
+//     var c=a+b;
+//     return c;
+// }
+// console.log(sum(10));
+
+//BU kadar if kullanmayalım diye baştan a ve b için default bir deger tanımlayabiliriz.
+
+// const sum= function(a=0,b=0){
+//     var c=a+b;
+//     return c;
+// }
+// console.log(sum(12,13));
+// console.log(12,);
+// console.log(15);
 
 
 

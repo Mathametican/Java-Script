@@ -480,6 +480,71 @@
 // console.log(12,);
 // console.log(15);
 
+//WINDOW OBJECT
+// Tüm yazılanları baştan sona gösteriyor bu window
+//let val;
+// var a=10;
+// function b(){
+//     return 0;
+// }
+//val=window;
+//alert
+//alert('Merhaba');
+
+//prompt
+//var c=prompt('Bir Sayı Giriniz.....');
+
+//confirm
+// var d=confirm('Bu İşlemi Yapmak İstediğinizden Emin misiniz????');
+// if(d==true){
+//     console.log('Hakkınızda hayırlı olsun cesaretinizden dolayı tebrikler');
+// }else{
+//     console.log('Hakkınızda hayırlı olsun ama biraz cesur olursanız bizce sizin için daha iyi');
+// }
+// console.log(d);
+
+//location    sayfanın tam olarak adresini getiriyor.
+
+//val =window.location;
+//val =window.location.href;
+//val=window.location.hostname;
+//val=window.location.host;
+//val=window.location.protocol;
+//console.log(val);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

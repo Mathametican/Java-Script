@@ -387,8 +387,17 @@
 // console.log(people);
 // console.log(typeof people);
 
+//DİZİ VE NESNELERİN DÖNGÜDE KULLANILMASI
 
+let cars=['BMW','Volvo','Toyota','Ford'];
+// for(let i=0;i<cars.length;i++){
+//     console.log(cars[i]);
+// }
 
+//Bu işlemi daha kısa olarak (for in metodu içerisinde de kullanabiliyoruz.)
+for(let i in cars){
+    console.log(`index: ${i} , value: ${cars[i]}`);
+}
 
 
 

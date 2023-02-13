@@ -428,6 +428,40 @@
 // let a=karesiniAl(13);
 // console.log(a);
 
+function karelerToplam(sayi1,sayi2){
+    function kareAl(x){
+        return x*x;
+    }
+    return kareAl(sayi1)+kareAl(sayi2);
+}
+let a=karelerToplam(12,5);
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

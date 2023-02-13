@@ -513,6 +513,10 @@
 //console.log(val);
 
 
+//DOM(Document Object Model)
+//DOM Java Scriptin Tarayıcı üzerindeki çalışmasını inceleyeceğiz.
+
+
 
 
 

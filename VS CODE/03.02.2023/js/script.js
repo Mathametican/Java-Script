@@ -389,15 +389,63 @@
 
 //DİZİ VE NESNELERİN DÖNGÜDE KULLANILMASI
 
-let cars=['BMW','Volvo','Toyota','Ford'];
+//let cars=['BMW','Volvo','Toyota','Ford'];
 // for(let i=0;i<cars.length;i++){
 //     console.log(cars[i]);
 // }
 
 //Bu işlemi daha kısa olarak (for in metodu içerisinde de kullanabiliyoruz.)
-for(let i in cars){
-    console.log(`index: ${i} , value: ${cars[i]}`);
-}
+//for in 
+// for(let i in cars){
+//     console.log(`index: ${i} , value: ${cars[i]}`);
+// }
+// forEach     for in den daha kısa ve kolay bir metod
+// cars.forEach(function(items){
+//     console.log(items);
+// })
+
+// Diziler için döngü oluşturmanın üç yolu
+let people=[{firstName:'Mustafa', lastName:'Filiz'},
+{firstName:'Selma',lastName:'Kaplan'}];
+
+// for(let i=0;i<people.length;i++){
+//     console.log(people[i].firstName);
+// }
+
+// for(let i in people){
+//     console.log(`index: ${i}, Name:${people[i].firstName}, LastName:${people[i].lastName}`);
+// }
+
+people.forEach(function(items){
+    console.log(items.firstName, items.lastName);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

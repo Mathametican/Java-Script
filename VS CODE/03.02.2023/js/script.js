@@ -405,8 +405,8 @@
 // })
 
 // Diziler için döngü oluşturmanın üç yolu
-let people=[{firstName:'Mustafa', lastName:'Filiz'},
-{firstName:'Selma',lastName:'Kaplan'}];
+// let people=[{firstName:'Mustafa', lastName:'Filiz'},
+// {firstName:'Selma',lastName:'Kaplan'}];
 
 // for(let i=0;i<people.length;i++){
 //     console.log(people[i].firstName);
@@ -416,10 +416,17 @@ let people=[{firstName:'Mustafa', lastName:'Filiz'},
 //     console.log(`index: ${i}, Name:${people[i].firstName}, LastName:${people[i].lastName}`);
 // }
 
-people.forEach(function(items){
-    console.log(items.firstName, items.lastName);
-})
+// people.forEach(function(items){
+//     console.log(items.firstName, items.lastName);
+// })
 
+//FUNCTIONS
+
+// function karesiniAl(sayi){
+//     return sayi*sayi;
+// }
+// let a=karesiniAl(13);
+// console.log(a);
 
 
 

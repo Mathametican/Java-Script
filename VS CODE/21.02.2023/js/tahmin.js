@@ -12,6 +12,8 @@ document.getElementById("ss").innerHTML=count;
 document.getElementById("pp").innerHTML="Tahmin sayınızı büyültünüz.  Gelen Sayı: "+t;
 }
 else if(i==t){
-document.getAnimations("pp").innerHTML="Doğru Tahmin Ettiniz..";
+count++;
+document.getElementById("ss").innerHTML=count;
+document.getElementById("pp").innerHTML="Doğru Tahmin Ettiniz..";
 }
 }

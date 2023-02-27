@@ -1,0 +1,17 @@
+body{
+    background: rgba(245, 221, 237, 0.895);
+}
+
+ .div1{
+    position:absolute;
+    left:40%;
+    top:40%;
+ }
+    .hh{
+        border:3px solid rgb(22, 82, 139); 
+        background-color: rgb(132, 227, 227) ;
+        border-radius: 50%;
+        color: blueviolet;
+        padding-left: 61px;
+
+}

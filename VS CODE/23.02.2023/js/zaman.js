@@ -1,7 +1,7 @@
 function Showtime(){
     var date=new Date();
     var h=date.getHours();
-    var m=date.getMinutes();
+    var d=date.getMinutes();
     var s=date.getSeconds();
     var durum="AM";
     if(h>=12){
@@ -9,7 +9,7 @@ function Showtime(){
     }
     var time=h+":"+d+":"+s+"  "+durum;
     
-    document.getElementById("dm").innerHTML=time;
-    setTimeout(Showtime,1000) 
+    document.getElementById("demo").innerHTML=time;
+    setTimeout(Showtime,5000) // 5 Saniye geçince ekranı değiştiriyor yoksa  direkt
 }
 Showtime();

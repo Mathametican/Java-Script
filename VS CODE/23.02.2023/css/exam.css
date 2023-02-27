@@ -1,0 +1,20 @@
+.div1{
+    position:absolute;
+    background:rgb(130, 223, 242);
+    left:40%;
+    top:20%;
+    right: 40%;
+    
+    padding-left: 30px;
+    border-radius: 50px;
+  
+
+}
+.div2{
+   
+    background: pink;
+    padding-left:40px ;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-right: 40px;;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .btn{
+        color:rgb(108, 18, 192);
+        font-size: 20px;
+        background: rgb(252, 252, 252);
+        border-radius: 10%;
+        border-style:double;
+    }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="Ac()">OPEN</button>
+    <button class="btn" onclick="Kapat()">CLOSE</button>
+
+    <script>
+
+    var x;
+    function Ac(){
+    x=window.open("https://www.amazon.com/","","width=1000,height=800px");
+    }
+    function Kapat(){
+    x.close();
+    }
+    </script>
+</body>
+</html>

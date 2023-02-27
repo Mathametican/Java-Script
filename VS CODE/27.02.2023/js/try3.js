@@ -17,7 +17,7 @@ function testtrycatch(){
         throw "Input must be a number";
     }
     if(x>=5 && x<=10){
-        y.innerHTML="you did good job";
+        y.innerHTML="You did good job";
         y.style.color="green";
     }
     }catch(e){

@@ -16,5 +16,20 @@
 <body>
     
     <p id="pid" class="cc">Merhaba</p>
+    <p class="cc">Hello</p>
+    <p class="cc">Hello</p>
+    <p class="cc">Hello</p>
+    <p class="cc">Hello</p>
+    <button onclick="Run1()">Çalıştır</button>
+    <button onclick="Run2()">RUN</button>
+    <script>
+        function Run1(){
+    var x=document.getElementsByClassName("cc");
+    x[4].innerHTML="DOM class Name";
+        }
+    function Run2(){
+    var x=document.getElementById("pid").innerHTML="Changed By Id";
+}
+    </script>
 </body>
 </html>

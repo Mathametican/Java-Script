@@ -9,13 +9,14 @@
 <body>
     <button onclick="API1()">RUN</button>
     <h1 id="xx"></h1>
+    <p id="pp"></p>
     <script>
         function API1(){
             fetch('https://jsonplaceholder.typicode.com/posts/1').
             then(response=>response.json()).then(x=>{
             console.log(x);
             document.getElementById("xx").innerHTML=x.body;
-
+            document.getElementById("pp").innerHTML=x.title;
             })
         }
     </script>

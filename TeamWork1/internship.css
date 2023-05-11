@@ -1,0 +1,22 @@
+.center {
+    display: block;
+    margin: auto;
+    border-style: double;
+   }
+   body {
+    margin: 100px;
+    background-color: rgb(255, 255, 255);
+    }
+    #quotes {
+        text-align: center;
+        font-style: italic;
+        font-size: x-large;
+        background-color: aquamarine;
+    }
+    h2 {
+        text-align: center;
+        color: blue;
+        }
+        tr:hover {
+            background-color: rgb(162, 162, 158);
+            }                

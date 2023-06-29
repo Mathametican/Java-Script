@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<h1 id="sonuc"></h1>-->
+    <h3>PREDICTION APP</h3>
+    <input type="Number" id="in1" placeholder="Please Enter A number Between 0 to 200">
+    <button onclick="RandomApp()">Sent your prediction</button>
+    <p id="result"></p>
+
+    <script>
+    var variable=Math.floor(Math.random()*200); // math.floor() methodu ile Math.Random()*299 ile üretilen ondalık sayıları tam sayıya çeviriyor.
+    console.log(variable);
+    function RandomApp(){
+        var numberP=document.getElementById('in1').value;
+    if(variable==numberP){
+       document.getElementById('result').innerHTML='Congrulations You Predict Truely.';
+       document.getElementById('result').style.color='green';
+    }else{
+        document.getElementById('result').innerHTML='We are sorry:) Please Try Again';
+        document.getElementById('result').style.color='purple';
+    }
+    }  
+    </script>
+</body>
+</html>

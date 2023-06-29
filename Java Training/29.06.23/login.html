@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+     
+<h3>LOGIN PAGE</h3>
+<p>E-mail</p>
+<input id="in1" placeholder="Please Enter Your Email Address">
+<br/>
+<p>PASSWORD</p>
+<input id="in2" placeholder="Please Enter Your Password">
+<button onclick="login()">ENTER</button>
+
+<script>
+    function login(){
+    var mail=document.getElementById('in1').value;
+    var paswo=document.getElementById('in2').value;
+
+    if(mail=='info@clarusway.com' && paswo==123456){
+    location.href='yes.html';   //LOGIN HTML ile yes.html and no.html e geçiş yapacağız.  location.href='';
+    }else{
+    location.href='no.html';
+    }
+}
+</script>
+</body>
+</html>

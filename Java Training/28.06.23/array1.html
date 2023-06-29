@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sonuc1"></h1>
+    <h1 id="sonuc2"></h1>
+    <h1 id="sonuc3"></h1>
+    <h1 id="sonuc4"></h1>
+    <h1 id="sonuc5"></h1>
+    <h1 id="sonuc6"></h1>
+    <h1 id="sonuc7"></h1>
+    <script>
+     var list=[65,89,17,"Ayşe","Fatma"," Hayriye",25,36,123];
+     document.getElementById('sonuc1').innerHTML=list;// CALLING ALL ITEMS OF LIST ARRAY
+     document.getElementById('sonuc2').innerHTML=list[0];// CALLING SPECIFIC ITEM IN ARRAY LIST
+     list[5]="Döndü";//we change the fifth item in the arraylist
+     list.push('Zeynep'); //we add new item in arrayList not to mention the which index we push the item.
+     document.getElementById('sonuc3').innerHTML=list[5];
+     document.getElementById('sonuc4').innerHTML=list.length;
+     document.getElementById('sonuc5').innerHTML=list.sort();// Hayriye nin başında boşluk olduğu için ilk onu getirdi sayılarda 123 hepsinden önce geliyor çünkü bunları text olarak algılıyor.
+
+     var list1=[];// In here we define a dynamic list array which we can fill later.
+     list1[0]=15;//we add first item to arrayList
+     list1[1]=243;
+     list1[2]="Meltem";
+     document.getElementById('sonuc6').innerHTML=list1;
+
+     var list2=[];// third using way of arrayList
+     list2.push(58);
+     list2.push(67);
+     list2.push('Aslan');
+
+     document.getElementById('sonuc7').innerHTML=list2;
+    </script>
+</body>
+</html>

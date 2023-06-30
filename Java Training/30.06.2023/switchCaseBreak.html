@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="d-grid gap-2 col-6 mx-auto">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Number</label>
+        <input  class="form-control" id="in1">
+   </div>
+   <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Second Number</label>
+    <input  class="form-control" id="in2">
+</div>
+<select id='selectid' class="form-select" aria-label="Default select example">
+    <option selected>Select a Operation</option>
+    <option value="1">ADD</option>
+    <option value="2">SUBTRACT</option>
+    <option value="3">MULTIFY</option>
+    <option value="4">DIVIDE</option>
+</select>
+<br/>
+    
+        <button onclick="Calculation()" class="btn btn-primary" type="button">CALCULATE</button>
+<br/>
+    <div id='resultid' class="alert alert-success" role="alert">
+    RESULT :
+   </div>
+</div>
+
+<script>
+    function Calculation(){
+    var n1=Number(document.getElementById('in1').value);
+    var n2=Number(document.getElementById('in2').value);
+    var select=document.getElementById('selectid').value;
+
+    switch(select){
+    case "1":
+        document.getElementById('resultid').innerHTML="RESULT : "+(n1+n2);
+    break;
+    
+    case "2":
+        document.getElementById('resultid').innerHTML="RESULT : "+(n1-n2);
+    break;
+
+    case "3":
+        document.getElementById('resultid').innerHTML="RESULT : "+(n1*n2);
+    break;
+
+    case "4":
+        document.getElementById('resultid').innerHTML="RESULT : "+(n1/n2);
+    break;
+
+    default:
+    document.getElementById('resultid').innerHTML='Please select an Operation.'
+    break;
+
+    }
+    }
+
+</script>
+
+</body>
+</html>

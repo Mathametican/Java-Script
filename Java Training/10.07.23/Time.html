@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>   
+        body{
+           background-color: black;  
+        }
+        .cc{
+
+            position:absolute;
+            left:35%;
+            top: 30%;
+            color:aliceblue;
+            font-size:50px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--div tag bütün elementleri bir araya toplayan düzenleyendir.-->  <!--  .cc ile class çagrılıyor. -->
+    <div class="cc">
+        <h3 id="h3id">Deneme Test</h3>
+      
+    </div>
+    <script>
+        function timeF(){
+            var t=new Date();
+            var h=t.getHours();
+            var m=t.getMinutes();
+            var s=t.getSeconds();
+            var y=t.getFullYear();
+            var mo=t.getMonth();
+            var d=t.getDay();
+
+            var state="AM";
+            if(h>=12){
+                state="PM";
+            }
+            var sonuc=h+":"+m+":"+s+"  "+state+"<br>"+d+"  "+m+"  "+y;
+
+            document.getElementById("h3id").innerHTML=sonuc;
+            console.log(t);
+            setTimeout(timeF,1000);  <!--Her 1 saniyede bir fonksiyon çalışsın RECURSIVE FUNCTIION kendi kendini döndüren function-->
+
+           
+        }
+      
+      timeF();  <!-- Bu şekilde bir fonksiyon button baglı olmadan çalıştırılabilir.-->
+    </script>
+</body>
+</html>

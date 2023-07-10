@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sonuc"></h1>
+    <script>
+        var x=Math.floor(Math.random()*100);
+        console.log(x);
+
+        var y=prompt("Please guess a number between from 0 to 100");
+
+        while(x!=Number(y)){
+            y=prompt("Unfortunately you could not guess correctly. Please guess again. ");
+        }
+
+        //alert("Congralutations");
+
+        document.getElementById("sonuc").innerHTML="Congralutations";
+    </script>
+</body>
+</html>

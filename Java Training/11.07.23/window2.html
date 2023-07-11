@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Ac()">Open</button>
+    <button onclick="Kapat()">Close</button>
+
+
+    <script>
+var a;    
+        
+function Ac(){
+    
+a=window.open("https://www.salesforce.com/eu/"," ","width=500,height=300");// a=window.open("url","blank","weight= ,height= ")  bu şekilde virgülden ayırarak sayfanın farklı özelliklerini tanımlayabiliriz. blank yada boş olmaz ise yeni bir sayfa oluştur muyor yan sekmede açıyor.
+
+// moveTo ile window un nerede açılacagına karar veriyoruz.
+a.moveTo(500,100); // sol ve üst ile arasındaki mesafe yi veriyor.
+}
+function Kapat(){
+
+a.close();
+}
+
+    </script>
+</body>
+</html>

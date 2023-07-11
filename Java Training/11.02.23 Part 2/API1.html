@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="DataF()">CALL</button>
+    <h3 id="veri"></h3>
+    <script>
+   //Burada API deki verileri çagıracağız.
+       function DataF(){
+        fetch('https://jsonplaceholder.typicode.com/users')
+
+        .then(res=>res.json())
+        .then(a=>{
+            console.log(a);
+            //document.write(a);
+            for(var i=0;i<=a.length ;i++){
+            document.getElementById("veri").innerHTML="Name: "+a[i].name+"</br>"+"UserName: "+a[i].username;
+       }})
+       }
+//fetch(url)  fetch getirmek demek API datasının URL sini kullanarak getiriyoruz.
+//.then(res=>res.json)  burada res bir değişken nedersen olur burada fetch getir dedik sonra 
+//bunu json formatına çevirdedik .then(a=> { console.log(a)})
+// sonra bunu a değişkenine ata ve bunu console log a yaz document.write ile yaz document.getElemnetId()yaz diyebiliriz.
+//Köşeli parantez varsa bu bir ARRAY yani liste büyüzden aklımıza index gelmeli
+    </script>
+</body>
+</html>

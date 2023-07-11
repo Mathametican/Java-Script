@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="DataF()">CALL</button>
+    <div id="veri"><div>
+    <script>
+   //Burada API deki verileri çagıracağız.
+       function DataF(){
+        var allveri="";
+        fetch('https://jsonplaceholder.typicode.com/users')
+
+        .then(a=>a.json())
+        .then(b=>{
+        
+            for(var i=0;i<b.length;i++){
+        
+            allveri+="<p>"+"Name: "+b[i].name+"</p>";  
+            allveri+="<h3>"+"Mail: "+b[i].email+"</h3> <hr>";
+
+            
+       }
+       document.getElementById("veri").innerHTML=allveri;
+       })
+       }
+// Burada + diyerek allveri üzerine veri eklenmesini sağlıyoruz diger türlü a daki veriyi siliyor yerine yenisini ekliyor.
+    </script>
+</body>
+</html>

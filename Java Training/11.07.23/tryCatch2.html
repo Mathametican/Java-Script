@@ -14,7 +14,7 @@
             <label for="exampleFormControlInput1" class="form-label">PASSWORD</label>
             <input  class="form-control" id="in1" placeholder="Please Create a New Password">
           </div>
-          <div id="mesaj" class="alert alert-danger" role="alert">
+          <div id="mesaj" class="alert alert-primary" role="alert">
         
           </div>
         <button onclick="Kontrol()"    class="btn btn-primary" type="button">CONTROL THE PASSWORD</button>
@@ -31,12 +31,23 @@ function Kontrol(){
         var test1=deger.length;
         //console.log(test1);
 
-        if(0<test1<8) throw "Passwort consists of al least 8 characters";
-        if(test1=="") throw "Password can not be empty";
+
+        if(deger=="") throw "The Password cannot be empty";
+        if(isNaN(deger))      //isNaN()  metodu deger in sayılardan oluşup oluşmadığını kontrol eder.
+        throw "The Password consists of only numeric characters ";
+        if(test1<8) throw "The Password consists of al least 8 characters";
+        if(test1>16) throw "The Password does not consist of more than 16 characters ";
+        
+        mas.style.color="green";
+        mas.innerHTML="Congrulations You Successfully Create Your Password";
+
+
+        
+        
 
     }catch(b){
+    mas.innerHTML=b;
 
-     mas.innerHTML=b;
     }
 }
     </script>

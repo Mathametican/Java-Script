@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<style>   
+        .cc{
+            color:blueviolet;
+        }
+    </style>   head tag içine <style> css yerleştirip .cc ile aynı class lara aynı özellikleri tanımladık --> 
+</head>
+<body>
+    
+<button class="cc">RUN 1</button>
+<button class="cc">RUN 2</button>
+<button>RUN 3</button>
+<button>RUN 4</button>
+<button>RUN 5</button>
+
+<h3 class="cc">Test 1</h3>
+<h3>Test 2</h3>
+<h3>Test 3</h3>
+
+    <script>
+        //Burada getElementByClassName i tag gibi bir değişkene bağlıyoruz çünkü aynı class ismine  birden çok  bağlantı kurulabillir. Böylece class için bir liste oluştutup o listnin indexine göre çağırıyoruz.
+      var y= document.getElementsByClassName("cc")  ;
+      y[0].style.background="purple";
+      y[1].style.background="pink";
+      y[2].style.color="green";
+    </script>
+</body>
+</html>

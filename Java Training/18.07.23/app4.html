@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .cc{
+        background: palevioletred;
+        width: 400px;
+        height: 200px;
+        margin-top: 200px;
+        margin-left:525px;
+        border: 3px solid rgb(81, 44, 230);
+        border-radius:50px;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 40px;
+
+      }
+
+    </style>
+</head> 
+
+<body>
+    <div class="cc" onmouseover="moveOverF(this)" onmouseout="moveOutF(this)">     <!--moveOverF(this)  iç kısma this yazarak id vermeyi ortadan kaltırdık bu funktion bu elemette çalışacak demek -->
+    
+    </div>
+    <script>
+        function moveOverF(x){   //functionların içerisine bu parametreleri eklememizin sebebi this e karşılık gelmesi için
+            x.innerHTML="HELLO";
+            x.style.background="black";
+            x.style.color="white";
+            
+            
+            
+
+        }
+        function moveOutF(y){
+
+            y.innerHTML="Merhaba";
+            y.style.background="pink";
+            y.style.color="black";
+
+        }
+
+    </script>
+</body>
+</html>

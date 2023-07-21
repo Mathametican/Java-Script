@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+
+    <script>
+        var a="B";
+        var b="Merhaba";// bunu binary code liste olarak istenir hher karakter için ayrı 
+        document.getElementById("demo1").innerHTML=a.charCodeAt();
+        document.getElementById("demo2").innerHTML=a.charCodeAt().toString(2);
+        document.getElementById("demo3").innerHTML=b[3].charCodeAt();
+        document.getElementById("demo4").innerHTML=b[3].charCodeAt().toString(2);
+        document.getElementById("demo5").innerHTML=String.fromCharCode(69);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Hesapla()">Es-5</button>
+    <p id="pid1"></p>
+    <button onclick="calculate()">Es-6</button>
+    <p id="pid2"></p>
+</body>
+<script>
+    function Hesapla(){
+
+        var s=carp(2,52);
+
+        document.getElementById("pid1").innerHTML=s;
+
+    }
+
+    function carp(a,b){
+
+        return a*b;
+
+    }
+
+    function calculate(){
+        var t=(e,k)=>{return e*k;};
+
+        var z=t(14,5);
+
+        document.getElementById("pid2").innerHTML=z;
+    }
+</script>
+</html>
